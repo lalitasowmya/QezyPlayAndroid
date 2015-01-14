@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Qezy Play</string>
+     <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="description">Media Controls</string>
+     <string name="error_player">There was an error initializing the YouTubePlayer</string>
+</resources>

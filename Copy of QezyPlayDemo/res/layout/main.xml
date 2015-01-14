@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/qezyplaybg"
+    android:orientation="vertical" >
+  
+    <ImageView
+        android:id="@+id/previewScreenImageView"
+         android:layout_width="4000dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="70dip"
+        android:src="@drawable/previewtvscreen" />
+ 
+    <FrameLayout
+        android:id="@+id/videoSurfaceContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="209dip"
+        android:layout_marginLeft="310dip"
+        android:layout_marginRight="310dip"
+        android:layout_marginTop="79dip"
+        >
+ 
+       <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        
+        <SurfaceView
+            android:id="@+id/surface_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </SurfaceView>
+    </FrameLayout>
+
+    <com.ib.coverflow.CoverFlow
+        xmlns:coverflow="http://schemas.android.com/apk/res/com.ib.qezyplay"
+        android:id="@+id/coverflowReflect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dip"
+        coverflow:imageHeight="150dip"
+        coverflow:imageReflectionRatio="0.1"
+        coverflow:imageWidth="100dip"
+        coverflow:reflectionGap="2dip"
+        coverflow:withReflection="true" />
+
+</RelativeLayout>
